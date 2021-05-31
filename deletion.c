@@ -1,0 +1,20 @@
+//deletion
+#include<stdio.h>
+main()
+{
+    int i,size,a[100],pos;
+    printf("size of array:");
+    scanf("%d",&size);
+    printf("enter the element:");
+    for(i=0;i<size;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("enter the position:");
+    scanf("%d",&pos);
+    for(i=pos;i<size;i++)
+        a[i-1]=a[i];
+    printf("the new array:\t");
+    for(i=0;i<size-1;i++)
+        printf("%d\t",a[i]);
+}
